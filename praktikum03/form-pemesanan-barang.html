@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+    <style>
+        body{background-color: rgb(164, 208, 255); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        table{background-color: rgb(164, 208, 255);}
+        textarea{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        input{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        select{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        td{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        button{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: rgb(0, 87, 236);}
+    </style>
+</head>
+<body style="max-width: 1000px; border: 3px solid black; margin: auto; margin-top: 7%;">
+    <div>
+    <table style="border-top: 2px solid; border-left: 2px solid;
+    border-bottom: 2px solid; border-right: 2px solid; margin-left: auto; margin-right: auto; margin-top: 30px; ">
+        <tr style="text-align:left">
+            <td style="padding-right: 50px;">&emsp; Home &emsp;|</td>
+            <td style="padding-right: 50px;">&emsp; Generate Link &emsp;|</td>
+            <td style="padding-right: 50px;">&emsp; Transaction History &emsp;|</td>
+            <td style="padding-right: 50px;">&emsp; Policy &emsp;|</td>
+            <td style="padding-right: 50px;">&emsp; Logout &emsp;&emsp;</td>
+        </tr>
+    </table>
+    </div>
+    <form>
+        <div style="display: flex; padding-top: 30px;">
+        <img src="photo/macbook.jpeg" border="3px" style="border-radius: 5px; flex-shrink: 0; height: 7cm; margin-left: 70px;">
+        <table style="margin-left: 2cm;">
+            <tr>
+                <td>Title Here :</td>
+                <td style="padding-left: 50px;"><input type="text" style="width: 50%" value="Macbook Air £800"></td>
+            </tr>
+            <tr>
+                <td>Description :</td>
+                <td style="padding-left: 50px">
+                <textarea type="text" cols="22" rows="5">
+Year : 2009
+
+Model :
+
+Condition : Mint
+                </textarea></td>
+            </tr>
+            <tr>
+            <td>Account Number :</td>
+            <td style="padding-left: 50px"><input type="number" style="width:50%" value="17701342069"></td>
+            </tr>
+            <tr>
+                <td>Bank :</td>
+                <td style="padding-left: 50px"><label for="Bank"></label>
+                    <select id="Bank" name="Bank">
+                      <option value="Bring"> BANK BRI</option>
+                      <option value="BNI">BANK BNI</option>
+                      <option value="BNI">BANK MANDIRI</option>
+                      <option value="BNI">BANK BCA</option>
+                      <option value="BNI">BANK BTN</option>
+                      <option value="BNI">CIMB NIAGA</option>
+                      <option value="BNI">DANAMON</option>
+                      <option value="BSI">BANK BSI</option>
+                      <option value="BPI">BANK HSBC INDONESIA</option>
+                      <option value="BNI">CITIBANK INDONESIA</option>
+                    </select>
+                    </td>
+            </tr>
+            <tr>
+                <td>Account Holder :</td>
+                <td style="padding-left: 50px"><input type="text" style="width:50%" value="Name Here"></td>
+            </tr>
+            <tr>
+                <td>Transaction :</td>
+                <td style="padding-left: 50px"><input type="number" min="1" max="10" style="width: 35px" value="1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="font-size: 10pt; padding-left: 10%;">* if the transaction is for 3 person, choose 3 from the drop down list</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="font-size: 14px; padding-left: 50px; color: rgb(0, 87, 236);"><input type="checkbox" checked>Send to Mobile Phone</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="font-size: 14px; padding-left: 50px; padding-bottom: 15px; color: rgb(0, 87, 236);"><input type="checkbox" checked>Send to Email</td>
+            </tr>
+            <tr>
+                <td>Send to Mobile Phone :</td>
+                <td style="padding-left: 50px"><input type="number" style="width: 50%" value="6285298458167"></td>
+            </tr>
+            <tr>
+                <td>Send to Email :</td>
+                <td style="padding-left: 50px"><input type="text" style="width: 50%" value="savarazleasth@gmail.com"></td>
+            </tr>
+        </table>
+        </div>
+                <button style="margin-left: 70px; margin-top: 0px;" type="button"><a href="hasil-pemesanan.html" style="color:rgb(164, 208, 255)">Upload Picture</a></button>
+            <table style="margin-left: 63%; margin-bottom: 30px; margin-top: 15px;">
+            <tr>
+                <td>
+                    <button type="button" onclick="hasil-pemesanan.html"><a href="hasil-pemesanan.html" style="color:rgb(164, 208, 255)">Generate Nobr Link</a></button>
+                </td>
+            </tr>
+            </table>
+    </form>
+</body>
+</html>
+<!--<button style="margin-left:10px;" type="button"><a href="hasil-pemesanan.html" style="color:rgb(164, 208, 255)">Upload Image</a></button>
+        <table style="margin-left: 62%">-->
