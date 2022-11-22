@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    font-weight: bold;
+    font-size: large;
+}
+header, footer {
+    background-color:gold;
+    width: 102.2vh;
+    margin-left: auto;
+    height: 15vh;
+    line-height: 15vh
+}
+main {
+    display: flex;
+    height: 70vh;
+    line-height: 70vh;
+}
+article {
+    background-color: aliceblue;
+    flex: 2;
+}
+aside {
+    background-color: aqua;
+    flex: 1;
+}
+nav {
+    background-color: pink;
+    float: left;
+    width: 260px;
+    height: 100vh;
+    line-height: 15vh;
+}
